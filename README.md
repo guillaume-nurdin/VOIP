@@ -25,14 +25,15 @@ Validation du bon fonctionnement du serveur VoIP avant mise en production.
 
 🚀 Installation d'Asterisk
 Étapes d'installation :
-Mise à jour du système et installation des dépendances :
++Mise à jour du système et installation des dépendances :
 
-
+```
 sudo apt update && sudo apt upgrade -y  
-sudo apt install -y build-essential git libxml2-dev libncurses5-dev uuid-dev libjansson-dev libssl-dev libsqlite3-dev sqlite3 pkg-config automake libcurl4-openssl-dev libnewt-dev libsqlite3-dev  
-Téléchargement et installation d'Asterisk :
+sudo apt install -y build-essential git libxml2-dev libncurses5-dev uuid-dev libjansson-dev libssl-dev libsqlite3-dev sqlite3 pkg-config automake libcurl4-openssl-dev libnewt-dev libsqlite3-dev
+```
++Téléchargement et installation d'Asterisk :
 
-
+```
 wget https://downloads.asterisk.org/pub/telephony/asterisk/asterisk-22.2.0.tar.gz  
 tar -xvzf asterisk-22.2.0.tar.gz  
 cd asterisk-22.2.0  
@@ -40,20 +41,22 @@ cd asterisk-22.2.0
 make  
 sudo make install  
 sudo make samples  
-sudo make config  
-Lancement et vérification :
+sudo make config
+```
++Lancement et vérification :
 
-
+```
 sudo systemctl start asterisk  
 sudo systemctl status asterisk  
-sudo systemctl enable asterisk  
+sudo systemctl enable asterisk
+```
 🔧 Configuration des utilisateurs et extensions
 Exemple de configuration :
 Utilisateurs :
 Ouvrez le fichier de configuration :
 
 
-nano /etc/asterisk/pjsip.conf  
++ nano /etc/asterisk/pjsip.conf  
 Ajoutez des utilisateurs comme suit :
 ```
 ini
@@ -74,13 +77,11 @@ username = 2001
 
 [2001]  
 type = aor  
-contact = sip:2001@192.168.1.10  
+```
 Extensions :
 Ouvrez le fichier de configuration :
-```
-bash
-Copy
-nano /etc/asterisk/extensions.conf  
+
++ nano /etc/asterisk/extensions.conf  
 Ajoutez des extensions comme suit :
 
 ```

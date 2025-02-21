@@ -1,3 +1,19 @@
+:feelsgood:Veille Technologique sur la VOIP 
+
+1. Coûts opérationnels et de maintenance de la VoIP
+Réponse : Les coûts opérationnels et de maintenance de la VoIP sont généralement inférieurs à ceux des systèmes téléphoniques traditionnels grâce à une infrastructure partagée, une maintenance centralisée, et des mises à jour logicielles faciles.
+2. Différence entre la configuration VoIP d'un call center et d'un standard téléphonique d'entreprise
+Réponse : Un call center utilise des fonctionnalités avancées comme l'ACD (répartition des appels) et l'IVR (menu vocal), tandis qu'un standard téléphonique d'entreprise se concentre sur des fonctions basiques comme le transfert d'appels et la conférence.
+3. Exemples de sites marchands utilisant la VoIP et architecture possible
+Réponse : Des entreprises comme Amazon, Uber, et Airbnb utilisent la VoIP pour leur service client. Une architecture typique inclut un serveur VoIP, des intégrations CRM, et des fonctionnalités comme l'ACD et l'IVR.
+4. Scalabilité des serveurs VoIP
+Réponse : Les serveurs VoIP sont facilement scalables : on peut ajouter ou supprimer des utilisateurs, augmenter les capacités d'appels, et déployer la même configuration sur plusieurs sites sans interruption de service.
+5. Sécurité et chiffrement adapté à la VoIP
+Réponse : Pour sécuriser la VoIP, on utilise des protocoles comme SRTP (chiffrement des médias), TLS (chiffrement de la signalisation), et AES (algorithme de chiffrement). Ces outils, combinés à des bonnes pratiques (authentification forte, mise à jour régulière), rendent la VoIP plus sécurisée que les systèmes traditionnels.
+En résumé, la VoIP est économique, flexible, scalable, et sécurisée lorsqu'elle est bien configurée.
+
+
+
 📞 Projet VoIP : Présentation, Installation d'Asterisk et Plan de Test 🌐
 Ce projet explore la technologie VoIP (Voice Over Internet Protocol), une solution de communication moderne qui permet de passer des appels via Internet plutôt que via le réseau téléphonique traditionnel. La VoIP offre des avantages significatifs en termes de coût, de flexibilité et de fonctionnalités avancées, mais elle présente également des défis, notamment en matière de sécurité et de qualité audio.
 

@@ -50,17 +50,14 @@ Copy
 sudo systemctl start asterisk  
 sudo systemctl status asterisk  
 sudo systemctl enable asterisk  
+
+
 🔧 Configuration des utilisateurs et extensions
 Exemple de configuration :
 Utilisateurs :
-
-bash
-Copy
 nano /etc/asterisk/pjsip.conf  
 Ajoutez des utilisateurs comme suit :
 
-ini
-Copy
 [2001]  
 type = endpoint  
 context = default  
@@ -79,17 +76,14 @@ username = 2001
 type = aor  
  
 Extensions :
-
-bash
-Copy
 nano /etc/asterisk/extensions.conf  
 Ajoutez des extensions comme suit :
 
-ini
-Copy
 [default]  
 exten => 2001,1,Dial(PJSIP/2001,20)  
 exten => 2001,2,Hangup()  
+
+
 🧪 Plan de Test - Serveur VoIP
 Objectifs des tests :
 🧑‍💻 Administration des utilisateurs

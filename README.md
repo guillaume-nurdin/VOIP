@@ -27,14 +27,12 @@ Validation du bon fonctionnement du serveur VoIP avant mise en production.
 Étapes d'installation :
 Mise à jour du système et installation des dépendances :
 
-bash
-Copy
+
 sudo apt update && sudo apt upgrade -y  
 sudo apt install -y build-essential git libxml2-dev libncurses5-dev uuid-dev libjansson-dev libssl-dev libsqlite3-dev sqlite3 pkg-config automake libcurl4-openssl-dev libnewt-dev libsqlite3-dev  
 Téléchargement et installation d'Asterisk :
 
-bash
-Copy
+
 wget https://downloads.asterisk.org/pub/telephony/asterisk/asterisk-22.2.0.tar.gz  
 tar -xvzf asterisk-22.2.0.tar.gz  
 cd asterisk-22.2.0  
@@ -45,8 +43,7 @@ sudo make samples
 sudo make config  
 Lancement et vérification :
 
-bash
-Copy
+
 sudo systemctl start asterisk  
 sudo systemctl status asterisk  
 sudo systemctl enable asterisk  
@@ -55,11 +52,10 @@ Exemple de configuration :
 Utilisateurs :
 Ouvrez le fichier de configuration :
 
-bash
-Copy
+
 nano /etc/asterisk/pjsip.conf  
 Ajoutez des utilisateurs comme suit :
-
+```
 ini
 Copy
 [2001]  
@@ -81,17 +77,17 @@ type = aor
 contact = sip:2001@192.168.1.10  
 Extensions :
 Ouvrez le fichier de configuration :
-
+```
 bash
 Copy
 nano /etc/asterisk/extensions.conf  
 Ajoutez des extensions comme suit :
 
-ini
-Copy
+```
 [default]  
 exten => 2001,1,Dial(PJSIP/2001,20)  
-exten => 2001,2,Hangup()  
+exten => 2001,2,Hangup()
+```
 🧪 Plan de Test - Serveur VoIP
 Objectifs des tests :
 🧑‍💻 Administration des utilisateurs

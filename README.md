@@ -18,7 +18,7 @@ En résumé, la VoIP est économique, flexible, scalable, et sécurisée lorsqu'
 
 
 <hr><hr><hr>
-📞 Projet VoIP : Présentation, Installation d'Asterisk et Plan de Test 🌐
+📞 Projet VoIP : Présentation, Installation d'Asterisk et Plan de Test 🌐<br>
 Ce projet explore la technologie VoIP (Voice Over Internet Protocol), une solution de communication moderne qui permet de passer des appels via Internet plutôt que via le réseau téléphonique traditionnel. La VoIP offre des avantages significatifs en termes de coût, de flexibilité et de fonctionnalités avancées, mais elle présente également des défis, notamment en matière de sécurité et de qualité audio.
 
 📚 Contenu du projet

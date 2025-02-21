@@ -1,4 +1,4 @@
-📞 Projet VoIP : Présentation et Installation d'Asterisk 🌐
+📞 Projet VoIP : Présentation, Installation d'Asterisk et Plan de Test 🌐
 Ce projet explore la technologie VoIP (Voice Over Internet Protocol), une solution de communication moderne qui permet de passer des appels via Internet plutôt que via le réseau téléphonique traditionnel. La VoIP offre des avantages significatifs en termes de coût, de flexibilité et de fonctionnalités avancées, mais elle présente également des défis, notamment en matière de sécurité et de qualité audio.
 
 📚 Contenu du projet
@@ -19,6 +19,9 @@ Guide étape par étape pour installer et configurer Asterisk, un serveur VoIP o
 
 6. 🔧 Configuration des utilisateurs et extensions
 Exemple de configuration pour gérer les utilisateurs et les appels.
+
+7. 🧪 Plan de Test - Serveur VoIP
+Validation du bon fonctionnement du serveur VoIP avant mise en production.
 
 🚀 Installation d'Asterisk
 Étapes d'installation :
@@ -87,17 +90,87 @@ Copy
 [default]
 exten => 2001,1,Dial(PJSIP/2001,20)
 exten => 2001,2,Hangup()
-🎯 Utilisation
-Pour les entreprises : Réduisez les coûts de communication et gérez les appels de manière centralisée.
+🧪 Plan de Test - Serveur VoIP
+Objectifs des tests :
+🧑‍💻 Administration des utilisateurs
 
-Pour les développeurs : Explorez les solutions VoIP open-source et personnalisez-les selon vos besoins.
+📞 Établissement et réception d'appels
+
+🌐 Connectivité entre le serveur et les clients
+
+🔄 Démarrage et redémarrage du serveur
+
+🔒 Sécurisation des appels
+
+Cas de tests :
+Cas de test 1 : Création d’un utilisateur
+État initial : Serveur VoIP fonctionnel, aucun utilisateur configuré.
+
+Fonctionnalité testée : Création d'un utilisateur.
+
+Comportement attendu : L'utilisateur doit être enregistré et pouvoir se connecter.
+
+Étapes :
+
+Accéder à l'interface d'administration.
+
+Ajouter un nouvel utilisateur.
+
+Vérifier la connexion avec un client VoIP.
+
+Résultat : ✅ OK
+
+Cas de test 2 : Établissement d’un appel
+État initial : Deux utilisateurs configurés et enregistrés.
+
+Fonctionnalité testée : Établissement d'un appel.
+
+Comportement attendu : L'appel doit être fluide et sans latence.
+
+Étapes :
+
+Lancer les clients VoIP.
+
+Composer le numéro d'un utilisateur.
+
+Vérifier la qualité audio.
+
+Résultat : ✅ OK
+
+Cas de test 3 : Redémarrage du serveur
+État initial : Serveur fonctionnel avec des utilisateurs enregistrés.
+
+Fonctionnalité testée : Redémarrage du serveur.
+
+Comportement attendu : Les utilisateurs doivent pouvoir se reconnecter après le redémarrage.
+
+Étapes :
+
+Redémarrer le serveur.
+
+Vérifier la reconnexion des utilisateurs.
+
+Résultat : ✅ OK
+
+Cas de test 4 : Sécurisation des appels
+État initial : Appel fonctionnel entre deux utilisateurs.
+
+Fonctionnalité testée : Chiffrement des appels (SRTP, TLS).
+
+Comportement attendu : Les appels doivent être chiffrés et non interceptables.
+
+Étapes :
+
+Configurer le chiffrement.
+
+Vérifier via les logs ou un outil de capture réseau.
+
+Résultat : ❌ NOK (À corriger)
 
 📝 Conclusion
-La VoIP est une technologie puissante et économique, en pleine expansion, qui transforme les communications modernes. Asterisk, en tant que solution open-source, offre une grande flexibilité pour les déploiements personnalisés.
+La VoIP est une technologie puissante et économique, en pleine expansion, qui transforme les communications modernes. Asterisk, en tant que solution open-source, offre une grande flexibilité pour les déploiements personnalisés. Les tests réalisés permettent de valider le bon fonctionnement du serveur VoIP avant sa mise en production.
 
 Pour plus de détails, consultez les fichiers de configuration et les exemples fournis dans ce dépôt.
 
 🌟 N'hésitez pas à contribuer ou à poser des questions !
 🚀 Bonne exploration de la VoIP !
-
-(Icônes fournies par Shields.io et Emojipedia.)

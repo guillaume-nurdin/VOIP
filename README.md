@@ -17,7 +17,7 @@ Réponse : Pour sécuriser la VoIP, on utilise des protocoles comme SRTP (chiffr
 En résumé, la VoIP est économique, flexible, scalable, et sécurisée lorsqu'elle est bien configurée.
 
 
-
+<hr><hr><hr>
 📞 Projet VoIP : Présentation, Installation d'Asterisk et Plan de Test 🌐
 Ce projet explore la technologie VoIP (Voice Over Internet Protocol), une solution de communication moderne qui permet de passer des appels via Internet plutôt que via le réseau téléphonique traditionnel. La VoIP offre des avantages significatifs en termes de coût, de flexibilité et de fonctionnalités avancées, mais elle présente également des défis, notamment en matière de sécurité et de qualité audio.
 

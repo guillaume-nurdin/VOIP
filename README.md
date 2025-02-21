@@ -29,67 +29,67 @@ Mise à jour du système et installation des dépendances :
 
 bash
 Copy
-sudo apt update && sudo apt upgrade -y
-sudo apt install -y build-essential git libxml2-dev libncurses5-dev uuid-dev libjansson-dev libssl-dev libsqlite3-dev sqlite3 pkg-config automake libcurl4-openssl-dev libnewt-dev libsqlite3-dev
+sudo apt update && sudo apt upgrade -y  
+sudo apt install -y build-essential git libxml2-dev libncurses5-dev uuid-dev libjansson-dev libssl-dev libsqlite3-dev sqlite3 pkg-config automake libcurl4-openssl-dev libnewt-dev libsqlite3-dev  
 Téléchargement et installation d'Asterisk :
 
 bash
 Copy
-wget https://downloads.asterisk.org/pub/telephony/asterisk/asterisk-22.2.0.tar.gz
-tar -xvzf asterisk-22.2.0.tar.gz
-cd asterisk-22.2.0
-./configure
-make
-sudo make install
-sudo make samples
-sudo make config
+wget https://downloads.asterisk.org/pub/telephony/asterisk/asterisk-22.2.0.tar.gz  
+tar -xvzf asterisk-22.2.0.tar.gz  
+cd asterisk-22.2.0  
+./configure  
+make  
+sudo make install  
+sudo make samples  
+sudo make config  
 Lancement et vérification :
 
 bash
 Copy
-sudo systemctl start asterisk
-sudo systemctl status asterisk
-sudo systemctl enable asterisk
+sudo systemctl start asterisk  
+sudo systemctl status asterisk  
+sudo systemctl enable asterisk  
 🔧 Configuration des utilisateurs et extensions
 Exemple de configuration :
 Utilisateurs :
 
 bash
 Copy
-nano /etc/asterisk/pjsip.conf
+nano /etc/asterisk/pjsip.conf  
 Ajoutez des utilisateurs comme suit :
 
 ini
 Copy
-[2001]
-type = endpoint
-context = default
-disallow = all
-allow = ulaw,alaw
-auth = auth2001
-aors = 2001
+[2001]  
+type = endpoint  
+context = default  
+disallow = all  
+allow = ulaw,alaw  
+auth = auth2001  
+aors = 2001  
 
-[auth2001]
-type = auth
-auth_type = userpass
-password = 2001
-username = 2001
+[auth2001]  
+type = auth  
+auth_type = userpass  
+password = 2001  
+username = 2001  
 
-[2001]
-type = aor
-contact = sip:2001@192.168.1.10
+[2001]  
+type = aor  
+contact = sip:2001@192.168.1.10  
 Extensions :
 
 bash
 Copy
-nano /etc/asterisk/extensions.conf
+nano /etc/asterisk/extensions.conf  
 Ajoutez des extensions comme suit :
 
 ini
 Copy
-[default]
-exten => 2001,1,Dial(PJSIP/2001,20)
-exten => 2001,2,Hangup()
+[default]  
+exten => 2001,1,Dial(PJSIP/2001,20)  
+exten => 2001,2,Hangup()  
 🧪 Plan de Test - Serveur VoIP
 Objectifs des tests :
 🧑‍💻 Administration des utilisateurs

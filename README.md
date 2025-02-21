@@ -1,6 +1,6 @@
 :feelsgood:Veille Technologique sur la VOIP 
 
-1. Coûts opérationnels et de maintenance de la VoIP <br> <hd>
+1. Coûts opérationnels et de maintenance de la VoIP <br> <hr>
 Réponse : Les coûts opérationnels et de maintenance de la VoIP sont généralement inférieurs à ceux des systèmes téléphoniques traditionnels grâce à une infrastructure partagée, une maintenance centralisée, et des mises à jour logicielles faciles.
 2. Différence entre la configuration VoIP d'un call center et d'un standard téléphonique d'entreprise<br>
 Réponse : Un call center utilise des fonctionnalités avancées comme l'ACD (répartition des appels) et l'IVR (menu vocal), tandis qu'un standard téléphonique d'entreprise se concentre sur des fonctions basiques comme le transfert d'appels et la conférence.

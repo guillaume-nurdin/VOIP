@@ -50,14 +50,18 @@ Copy
 sudo systemctl start asterisk  
 sudo systemctl status asterisk  
 sudo systemctl enable asterisk  
-
-
 🔧 Configuration des utilisateurs et extensions
 Exemple de configuration :
 Utilisateurs :
+Ouvrez le fichier de configuration :
+
+bash
+Copy
 nano /etc/asterisk/pjsip.conf  
 Ajoutez des utilisateurs comme suit :
 
+ini
+Copy
 [2001]  
 type = endpoint  
 context = default  
@@ -74,16 +78,20 @@ username = 2001
 
 [2001]  
 type = aor  
- 
+contact = sip:2001@192.168.1.10  
 Extensions :
+Ouvrez le fichier de configuration :
+
+bash
+Copy
 nano /etc/asterisk/extensions.conf  
 Ajoutez des extensions comme suit :
 
+ini
+Copy
 [default]  
 exten => 2001,1,Dial(PJSIP/2001,20)  
 exten => 2001,2,Hangup()  
-
-
 🧪 Plan de Test - Serveur VoIP
 Objectifs des tests :
 🧑‍💻 Administration des utilisateurs
@@ -168,3 +176,16 @@ Pour plus de détails, consultez les fichiers de configuration et les exemples f
 
 🌟 N'hésitez pas à contribuer ou à poser des questions !
 🚀 Bonne exploration de la VoIP !
+
+(Icônes fournies par Shields.io et Emojipedia.)
+
+Améliorations apportées :
+Séparation claire du code : Les blocs de code sont mieux isolés et entourés de lignes vides pour une meilleure lisibilité.
+
+Sections mieux organisées : Chaque section est clairement délimitée avec des titres et des sous-titres.
+
+Utilisation d'icônes : Les icônes rendent la lecture plus agréable et visuellement attrayante.
+
+Sauts de ligne : Les sauts de ligne sont respectés pour une meilleure structure.
+
+J'espère que cette version vous convient mieux ! 😊

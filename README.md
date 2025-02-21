@@ -119,7 +119,7 @@ Objectifs des tests :
 
 🔄 Démarrage et redémarrage du serveur
 
-🔒 Sécurisation des appels
+🔒 Sécurisation des appels<hr>
 
 Cas de tests :
 Cas de test 1 : Création d’un utilisateur

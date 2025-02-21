@@ -137,7 +137,7 @@ Ajouter un nouvel utilisateur.
 
 Vérifier la connexion avec un client VoIP.
 
-Résultat : ✅ OK
+Résultat : ✅ OK<hr>
 
 Cas de test 2 : Établissement d’un appel
 État initial : Deux utilisateurs configurés et enregistrés.
@@ -154,7 +154,7 @@ Composer le numéro d'un utilisateur.
 
 Vérifier la qualité audio.
 
-Résultat : ✅ OK
+Résultat : ✅ OK<hr>
 
 Cas de test 3 : Redémarrage du serveur
 État initial : Serveur fonctionnel avec des utilisateurs enregistrés.
@@ -169,7 +169,7 @@ Redémarrer le serveur.
 
 Vérifier la reconnexion des utilisateurs.
 
-Résultat : ✅ OK
+Résultat : ✅ OK<hr>
 
 Cas de test 4 : Sécurisation des appels
 État initial : Appel fonctionnel entre deux utilisateurs.
@@ -184,7 +184,7 @@ Configurer le chiffrement.
 
 Vérifier via les logs ou un outil de capture réseau.
 
-Résultat : ❌ NOK (À corriger)
+Résultat : ❌ NOK (À corriger)<hr>
 
 📝 Conclusion
 La VoIP est une technologie puissante et économique, en pleine expansion, qui transforme les communications modernes. Asterisk, en tant que solution open-source, offre une grande flexibilité pour les déploiements personnalisés. Les tests réalisés permettent de valider le bon fonctionnement du serveur VoIP avant sa mise en production.

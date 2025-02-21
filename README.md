@@ -77,7 +77,7 @@ username = 2001
 
 [2001]  
 type = aor  
-contact = sip:2001@192.168.1.10  
+ 
 Extensions :
 
 bash

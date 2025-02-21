@@ -174,15 +174,3 @@ Pour plus de détails, consultez les fichiers de configuration et les exemples f
 🌟 N'hésitez pas à contribuer ou à poser des questions !
 🚀 Bonne exploration de la VoIP !
 
-(Icônes fournies par Shields.io et Emojipedia.)
-
-Améliorations apportées :
-Séparation claire du code : Les blocs de code sont mieux isolés et entourés de lignes vides pour une meilleure lisibilité.
-
-Sections mieux organisées : Chaque section est clairement délimitée avec des titres et des sous-titres.
-
-Utilisation d'icônes : Les icônes rendent la lecture plus agréable et visuellement attrayante.
-
-Sauts de ligne : Les sauts de ligne sont respectés pour une meilleure structure.
-
-J'espère que cette version vous convient mieux ! 😊
